@@ -24,7 +24,7 @@ class CreateTodo extends Component {
             <input type="text" onChange={(event) => this.handleChange(event)}/>
           </p>
           <input type="submit" />
-        </form>
+        </form onSubmit={ event => this.handleSubmit(event) }>
       </div>
     );
   }
