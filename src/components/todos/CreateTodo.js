@@ -1,5 +1,11 @@
 import React, { Component } from 'react'
 
+handleChange = event => {
+  this.setState({
+    text: event.target.value
+  })
+}
+
 class CreateTodo extends Component {
   render() {
     return(
